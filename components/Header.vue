@@ -2,7 +2,7 @@
     <header class="header">
         <nav class="nav">
             <NuxtLink to="/">
-                <h1>STYLUS Architecten Van Oekelen & Ratinckx</h1>
+                <h1>{{ config.title }}</h1>
             </NuxtLink>
             <div>
                 <h1>
@@ -10,16 +10,22 @@
                 </h1>
             </div>
         </nav>
+
     </header>
 </template>
 
 <script>
     export default {
         props: {
-                isInfoPage: {
-                    type: Boolean,
-                    required: false
+            isInfoPage: {
+                type: Boolean,
+                required: false
             }
+        },
+        data() {
+          return {
+            config: require("../content/data/config.json")
+          }
         },
         computed: {
             infoRoute() {
