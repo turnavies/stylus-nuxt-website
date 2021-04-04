@@ -2,7 +2,7 @@
     <header class="header">
         <nav class="nav">
             <NuxtLink to="/">
-                <h1>The Blog Title</h1>
+                <h1>STYLUS Architecten Van Oekelen & Ratinckx</h1>
             </NuxtLink>
             <div>
                 <h1>
@@ -20,7 +20,7 @@
                     type: Boolean,
                     required: false
             }
-        }, 
+        },
         computed: {
             infoRoute() {
                 return this.isInfoPage ? "/" : "/info"
