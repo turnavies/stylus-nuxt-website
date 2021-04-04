@@ -1,5 +1,5 @@
 ---
-author: Friedrich Nietzsche
+author: Henry David Thoreau
 title: The Geneology of Morals 2
 slug: the-geneology-of-morals
 date: 2019-08-19T07:00:00.000+00:00
