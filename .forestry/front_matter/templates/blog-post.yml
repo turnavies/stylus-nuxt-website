@@ -4,10 +4,10 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Projectnaam
   config:
     required: true
-  description: Enter title, needs to match filename for routing
+  description: Projectnaam moet overeenkomen met filename
 - name: author
   type: select
   default: []
