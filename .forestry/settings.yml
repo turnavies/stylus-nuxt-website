@@ -12,7 +12,7 @@ sections:
   create: documents
   match: "**/*"
   templates:
-  - blog-post
+  - project
 - type: document
   path: content/data/authors.json
   label: Author List
