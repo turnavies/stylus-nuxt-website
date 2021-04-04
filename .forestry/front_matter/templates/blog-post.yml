@@ -4,10 +4,33 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Projectnaam
   config:
     required: true
-  description: Enter title, needs to match filename for routing
+  description: Projectnaam moet overeenkomen met filename
+- name: jaar_uitvoering
+  type: number
+  label: Jaar uitvoering
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 1950
+    max: 2050
+    step: 
+    required: true
+- name: projecttype
+  type: tag_list
+  default: []
+  label: Projecttype
+- type: file
+  name: hero_image
+  label: hero_image
+- type: datetime
+  name: date
+  label: date
+  config:
+    required: true
 - name: author
   type: select
   default: []
@@ -21,17 +44,5 @@ fields:
       path: authors
   label: Author
   description: Select author, to add a new author, go to Authors List
-- type: datetime
-  name: date
-  label: date
-  config:
-    required: true
-- type: file
-  name: hero_image
-  label: hero_image
 pages:
-- content/blog-posts/an-essay-on-walking.md
-- content/blog-posts/ne-te-quaesiveris-extra.md
-- content/blog-posts/song-of-myself.md
-- content/blog-posts/sunflower-sutra.md
-- content/blog-posts/the-geneology-of-morals.md
+- content/projects/dm30.md
