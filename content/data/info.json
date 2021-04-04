@@ -1,9 +1,11 @@
 {
-  "description": "<h2>This blog was created using <a href=\"https://forestry.io/\" title=\"Forestry Link\">Forestry</a> &amp; <a href=\"https://gridsome.org/\" title=\"Gatsby Link\">Gridsome</a></h2>",
-  "cta": "<h2>To get started, import this site into Forestry or checkout the repository <a href=\"https://github.com/kendallstrautman/starter-blog-gatsby\" title=\"Repo Url\">here</a>.</h2>",
+  "description": "<h2>Dit is de portfoliowebsite van STYLUS Architecten Van Oekelen en Ratinckx. </h2>",
+  "cta": "<h2>STYLUS Architecten zijn Peter Van Oekelen en Kristine Ratinckx.</h2>",
   "contact": {
-    "email": "info@stylus.be"
+    "email": "info@stylus.be",
+    "twitter_handle": "",
+    "github_handle": ""
   },
   "background_color": "#B1BCBC",
-  "text_color": "#ebebeb"
+  "text_color": "#3B3B3B"
 }
