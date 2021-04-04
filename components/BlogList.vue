@@ -1,10 +1,10 @@
 <template>
     <section>
         <ul class="list">
-            <NuxtLink  
-                v-for="post in sortedPosts" 
-                :key="post.attributes.title" 
-                :to="`/blog/${formatSlug(post.attributes.title)}`"
+            <NuxtLink
+                v-for="post in sortedPosts"
+                :key="post.attributes.title"
+                :to="`/projects/${formatSlug(post.attributes.title)}`"
             >
                 <li>
                     <div class="hero_image">
@@ -16,9 +16,9 @@
                         <p>{{ formatExcerpt(post.body) }}...</p>
                     </div>
                 </li>
-            </NuxtLink>                  
+            </NuxtLink>
         </ul>
-    </section>                       
+    </section>
 </template>
 <script>
     export default {
@@ -26,8 +26,8 @@
             posts: {
                 type: Array,
                 required: true
-            }        
-        }, 
+            }
+        },
         computed: {
             sortedPosts() {
                 const sortedPosts = this.posts
@@ -48,10 +48,10 @@
         methods: {
             formatDate(date) {
                 return new Date(date).toDateString().slice(4)
-            }, 
+            },
             formatExcerpt(body) {
                 return body.slice(0 , 200).trimEnd()
-            }, 
+            },
             formatSlug(title) {
                 const regex = / /gi;
                 return title.toLowerCase().trim().replace(regex, "-")
@@ -60,7 +60,7 @@
     }
 </script>
 
-/* 
-TODO -- i would love to figure out how to show the md in the summary... 
+/*
+TODO -- i would love to figure out how to show the md in the summary...
 right now its just plaintext not sure how to target the loader to parse this
  */
