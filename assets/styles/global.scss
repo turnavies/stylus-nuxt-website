@@ -3,7 +3,7 @@
 @import './layouts/layout.scss';
 //pages ----------------------------
 @import './pages/info.scss';
-@import './pages/blog/blog.scss';
+@import './pages/projects/projects.scss';
 // components ------------------------
 @import './components/header.scss';
 @import './components/bloglist.scss';
@@ -76,13 +76,13 @@ p {
     letter-spacing: -1px;
     line-height: 1.1875;
   }
-  
+
   h2 {
     font-size: 1.5rem;
     letter-spacing: -.75px;
     line-height: 1.1667;
   }
-  
+
   h3 {
     letter-spacing: -.5px;
     line-height: 1.1875;
