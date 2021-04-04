@@ -33,7 +33,7 @@ fields:
   config:
     min: 1950
     max: 2050
-    step: 
+    step:
     required: true
 - name: budget
   type: number
@@ -42,9 +42,9 @@ fields:
   default: 0
   required: true
   config:
-    min: 
-    max: 
-    step: 
+    min:
+    max:
+    step:
 - type: file
   name: hero_image
   label: hero_image
@@ -53,7 +53,7 @@ fields:
   label: date
   config:
     required: true
-- name: author
+- name: photographer
   type: select
   default: []
   config:
@@ -61,10 +61,10 @@ fields:
     options: []
     source:
       type: documents
-      section: author-list
-      file: content/data/authors.json
-      path: authors
-  label: Author
-  description: Select author, to add a new author, go to Authors List
+      section: photographer-list
+      file: content/data/photographers.json
+      path: photographers
+  label: Photographer
+  description: Select photographer. To add a new photographer, go to Photographers List
 pages:
 - content/projects/dm30.md
