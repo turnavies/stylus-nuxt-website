@@ -8,16 +8,6 @@
                         <a :href="`mailto:${data.contact.email}`">Email: {{ data.contact.email }}</a>
                     </p>
                 </li>
-                <li>
-                    <p>
-                        <a :href="`https://twitter.com/${data.contact.twitter_handle}`">Twitter: @{{ data.contact.twitter_handle }}</a>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <a :href="`https://github.com/${data.contact.github_handle}`">Github: {{ data.contact.github_handle }}</a>
-                    </p>
-                </li>
             </ul>
         </section>
 </template>
@@ -49,4 +39,3 @@
         }
     }
 </script>
-
