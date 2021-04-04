@@ -1,20 +1,20 @@
 {
   "project_types": [
     {
-      label: "Particulier",
-      filterable: true
+      "label": "Particulier",
+      "filterable": true
     },
     {
-      label: "Renovatie",
-      filterable: false
+      "label": "Industrie",
+      "filterable": true
     },
     {
-      label: "Nieuwbouw",
-      filterable: false
+      "label": "Renovatie",
+      "filterable": false
     },
     {
-      label: "Industrie",
-      filterable: true
-    },
+      "label": "Nieuwbouw",
+      "filterable": false
+    }
   ]
 }
