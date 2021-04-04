@@ -8,6 +8,17 @@ fields:
   config:
     required: true
   description: Projectnaam moet overeenkomen met filename
+- name: subtitle
+  type: text
+  config:
+    required: true
+  label: Subtitel
+  showOnly:
+    value: Allen Ginsberg
+- name: projecttype
+  type: tag_list
+  default: []
+  label: Projecttype
 - name: jaar_uitvoering
   type: number
   label: Jaar uitvoering
@@ -19,10 +30,16 @@ fields:
     max: 2050
     step: 
     required: true
-- name: projecttype
-  type: tag_list
-  default: []
-  label: Projecttype
+- name: budget
+  type: number
+  label: Budget
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
 - type: file
   name: hero_image
   label: hero_image
