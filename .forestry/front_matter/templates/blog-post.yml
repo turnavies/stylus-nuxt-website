@@ -19,6 +19,10 @@ fields:
     max: 2050
     step: 
     required: true
+- name: projecttype
+  type: tag_list
+  default: []
+  label: Projecttype
 - type: file
   name: hero_image
   label: hero_image
@@ -27,10 +31,6 @@ fields:
   label: date
   config:
     required: true
-- name: projecttype
-  type: tag_list
-  default: []
-  label: Projecttype
 - name: author
   type: select
   default: []
