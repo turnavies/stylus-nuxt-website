@@ -24,7 +24,7 @@
       }
     }
     .projectList__typeList {
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
     }
     .projectList__typeItem {
       min-height: inherit;
@@ -33,10 +33,11 @@
       padding: 0.3rem;
       background-color: #ebebeb;
       margin-right: 0.5em;
+      font-size: 0.8rem;
     }
     .projectList__subtitle {
-      margin-bottom: 0.8rem;
-      margin-top: -0.8rem;
+      margin-bottom: 0.5rem;
+      margin-top: -0.6rem;
       color: #A0A0A0;
     }
     .projectList__info {

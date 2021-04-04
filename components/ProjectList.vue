@@ -32,11 +32,15 @@
             }
         },
         computed: {
+            filteredPosts() {
+                const filteredPosts = this.posts
+                return filteredPosts
+            },
             sortedPosts() {
-                const sortedPosts = this.posts
+                const sortedPosts = this.filteredPosts
                 sortedPosts.sort((a,b) => {
-                    const dateA = new Date(a.attributes.date);
-                    const dateB = new Date(b.attributes.date);
+                    const dateA = new Date(a.attributes.jaar_uitvoering);
+                    const dateB = new Date(b.attributes.jaar_uitvoering);
                     if (dateA < dateB) {
                         return 1;
                     }
