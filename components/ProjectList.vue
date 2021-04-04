@@ -14,7 +14,7 @@
                         <h2>{{ post.attributes.title }}</h2>
                         <p class="projectList__subtitle">{{ post.attributes.jaar_uitvoering }}</p>
                         <ul class="projectList__typeList">
-                          <li class="projectList__typeItem" v-for="projecttype in post.attributes.projecttype" :key="projecttype">{{ projecttype }}</li>
+                          <li v-for="projecttype in post.attributes.projecttype" :key="projecttype" class="projectList__typeItem">{{ projecttype }}</li>
                         </ul>
                         <p>{{ formatExcerpt(post.body) }}...</p>
                     </div>
