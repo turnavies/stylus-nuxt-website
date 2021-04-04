@@ -9,7 +9,7 @@
       <h1>{{ post.attributes.title }}</h1>
       <h3>{{ formattedDate }}</h3>
     </div>
-    <div class="project__body" v-html="post.html"></div>
+    <div v-html="post.html" class="project__body"></div>
     <div class="project__footer">
       <h2>Fotografie door {{ post.attributes.photographer }}</h2>
       <NuxtLink :to="`/projects/${nextProjectPath}`">
