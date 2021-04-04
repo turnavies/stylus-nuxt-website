@@ -10,7 +10,7 @@
                     <div class="hero_image">
                         <img :src="post.attributes.hero_image" :alt="post.attributes.title">
                     </div>
-                    <div class="blogList__info">
+                    <div class="projectList__info">
                         <h2>{{ post.attributes.title }}</h2>
                         <h3>{{ formatDate(post.attributes.date) }}</h3>
                         <p>{{ formatExcerpt(post.body) }}...</p>

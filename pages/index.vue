@@ -2,20 +2,20 @@
 
 <template>
   <div>
-    <BlogList :posts="posts" />
+    <ProjectList :posts="posts" />
   </div>
 </template>
 
 <script>
-import BlogList from '~/components/BlogList.vue'
+import ProjectList from '~/components/ProjectList.vue'
 
 export default {
   layout: 'layout',
   components: {
-    BlogList
+    ProjectList
   },
   async asyncData() {
-      // create context via webpack to map over all blog posts
+      // create context via webpack to map over all project posts
       const allPosts = await require.context("~/content/projects/", true, /\.md$/)
       const posts =  allPosts.keys().map((key) => {
         // give back the value of each post context

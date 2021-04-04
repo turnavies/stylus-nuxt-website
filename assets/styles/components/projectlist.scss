@@ -23,7 +23,7 @@
         min-height: 100%;
       }
     }
-    .blogList__info {
+    .projectList__info {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -38,7 +38,7 @@
         transition: transform 0.5s ease-out;
       }
     }
-  
+
     li {
       opacity: inherit;
       display: flex;
@@ -57,7 +57,7 @@
       max-width: 900px;
     }
   }
-  
+
   @media (min-width: 768px) {
     .list {
       a:hover {
@@ -70,7 +70,7 @@
               transition: opacity 0.3s ease;
             }
           }
-          div.blogList__info {
+          div.projectList__info {
             h2,
             h3,
             p {
@@ -96,15 +96,15 @@
           min-height: 0;
         }
       }
-      .blogList__info {
+      .projectList__info {
         min-width: 70%;
       }
     }
   }
-  
+
   @media (min-width: 1280px) {
     .list {
-      .blogList__info {
+      .projectList__info {
         padding: 3rem;
       }
       h3 {
@@ -112,4 +112,3 @@
       }
     }
   }
-  
