@@ -4,7 +4,7 @@ title: INDU01
 slug: indu01
 date: 2019-08-08T07:00:00.000+00:00
 hero_image: "/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg"
-jaar_uitvoering: 2019
+jaar_uitvoering: "2019"
 projecttype:
 - Industrieel
 - Nieuwbouw
