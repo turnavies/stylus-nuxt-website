@@ -29,5 +29,9 @@ fields:
 - type: file
   name: hero_image
   label: hero_image
+- name: projecttype
+  type: tag_list
+  default: []
+  label: Projecttype
 pages:
 - content/projects/dm30.md
