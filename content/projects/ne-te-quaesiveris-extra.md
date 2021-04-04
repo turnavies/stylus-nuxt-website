@@ -1,10 +1,10 @@
 ---
 author: Ralph Waldo Emerson
 title: INDU01
-slug: ne-te-quaesiveris-extra
-date: 2019-08-08T07:00:00.000+00:00
+slug: indu01
+date: 
 hero_image: "/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg"
-jaar_uitvoering: 2019
+jaar_uitvoering: "2019"
 projecttype:
 - Industrieel
 - Nieuwbouw
