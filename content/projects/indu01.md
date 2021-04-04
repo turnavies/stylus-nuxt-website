@@ -1,7 +1,7 @@
 ---
-author: Ralph Waldo Emerson
+author: ''
 title: INDU01
-slug: indu01
+slug: ''
 date: 2019-08-08T07:00:00.000+00:00
 hero_image: "/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg"
 jaar_uitvoering: "2019"
