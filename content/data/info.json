@@ -2,7 +2,7 @@
   "description": "<h2>Dit is de portfoliowebsite van STYLUS Architecten. </h2>",
   "cta": "<h2>STYLUS Architecten zijn Peter Van Oekelen en Kristine Ratinckx.</h2>",
   "contact": {
-    "email": "info@stylus.be",
+    "email": "info@stylus.be"
   },
   "background_color": "#748787",
   "text_color": "#E3E3E3"
