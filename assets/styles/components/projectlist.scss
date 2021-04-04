@@ -23,6 +23,22 @@
         min-height: 100%;
       }
     }
+    .projectList__typeList {
+      margin-bottom: 1rem;
+    }
+    .projectList__typeItem {
+      min-height: inherit;
+      height: auto;
+      display: inline;
+      padding: 0.3rem;
+      background-color: #ebebeb;
+      margin-right: 0.5em;
+    }
+    .projectList__subtitle {
+      margin-bottom: 0.8rem;
+      margin-top: -0.8rem;
+      color: #A0A0A0;
+    }
     .projectList__info {
       display: flex;
       flex-direction: column;
@@ -31,7 +47,8 @@
       border-bottom: 1px solid #ebebeb;
       h2,
       h3,
-      p {
+      p,
+      ul {
         -webkit-transform: translateX(0px);
         transform: translateX(0px);
         -webkit-transition: transform 0.5 ease-out;
@@ -73,7 +90,8 @@
           div.projectList__info {
             h2,
             h3,
-            p {
+            p,
+            ul {
               -webkit-transform: translateX(10px);
               transform: translateX(10px);
               -webkit-transition: transform 0.5s ease-out;

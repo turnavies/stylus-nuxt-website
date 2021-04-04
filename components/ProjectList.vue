@@ -12,7 +12,10 @@
                     </div>
                     <div class="projectList__info">
                         <h2>{{ post.attributes.title }}</h2>
-                        <h3>{{ formatDate(post.attributes.date) }}</h3>
+                        <p class="projectList__subtitle">{{ post.attributes.jaar_uitvoering }}</p>
+                        <ul class="projectList__typeList">
+                          <li class="projectList__typeItem" v-for="projecttype in post.attributes.projecttype" :key="projecttype">{{ projecttype }}</li>
+                        </ul>
                         <p>{{ formatExcerpt(post.body) }}...</p>
                     </div>
                 </li>
