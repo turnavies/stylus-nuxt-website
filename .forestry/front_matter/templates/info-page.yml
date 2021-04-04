@@ -22,12 +22,6 @@ fields:
   - type: text
     name: email
     label: email
-  - type: text
-    name: twitter_handle
-    label: twitter_handle
-  - type: text
-    name: github_handle
-    label: github_handle
   label: Contact Info
 - name: background_color
   type: color
