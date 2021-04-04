@@ -19,6 +19,11 @@ fields:
   type: tag_list
   default: []
   label: Projecttype
+- name: bouwheer
+  type: text
+  config:
+    required: false
+  label: Bouwheer
 - name: jaar_uitvoering
   type: number
   label: Jaar uitvoering
