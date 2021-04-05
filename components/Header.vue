@@ -3,7 +3,7 @@
         <nav class="nav__wrapper">
             <header class="nav__header">
               <NuxtLink to="/">
-                  <h1>{{ config.title }}</h1>
+                  <h1>{{ config.title[0] }}<br />{{ config.title[1] }}</h1>
               </NuxtLink>
             </header>
             <ProjectFilter v-if="!isInfoPage"/>
