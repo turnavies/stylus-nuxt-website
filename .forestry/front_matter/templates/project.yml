@@ -8,6 +8,13 @@ fields:
   config:
     required: true
   description: Projectnaam moet overeenkomen met filename
+- name: description
+  type: text
+  config:
+    required: true
+  label: Omschrijving
+  showOnly:
+    value: Allen Ginsberg
 - name: properties
   type: field_group
   config: {}
@@ -48,13 +55,6 @@ fields:
 - type: file
   name: hero_image
   label: hero_image
-- name: description
-  type: text
-  config:
-    required: true
-  label: Omschrijving
-  showOnly:
-    value: Allen Ginsberg
 - name: projecttype
   type: list
   config:
