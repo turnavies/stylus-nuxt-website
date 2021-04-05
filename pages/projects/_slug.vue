@@ -73,7 +73,6 @@
           currentPath
         }
       } catch(err) {
-        console.debug(err)
         return false
       }
     },
@@ -97,7 +96,6 @@
             delete propertiesToRender[propName]
           }
         }
-        console.log(propertiesToRender)
         return propertiesToRender
       }
     }
