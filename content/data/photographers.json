@@ -1,6 +1,6 @@
 {
   "photographers": [
-    [{"name":"test","filterable":false}],
-    [{"name":"test2","filterable":false}]
+    {"name":"test","filterable":false},
+    {"name":"test2","filterable":false}
   ]
 }
