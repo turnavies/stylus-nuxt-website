@@ -26,7 +26,7 @@ fields:
     type: number
     label: Jaar van uitvoering
     description: ''
-    default: 0
+    default: 2021
     required: true
     config:
       min: 1950
@@ -36,7 +36,7 @@ fields:
   - name: Locatie
     type: text
     config:
-      required: false
+      required: true
     label: Locatie
   - name: Bouwheer
     type: text
@@ -47,7 +47,7 @@ fields:
     type: number
     label: Budget
     description: ''
-    default: 0
+    default: 
     required: true
     config:
       min: 
