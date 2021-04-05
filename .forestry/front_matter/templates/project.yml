@@ -24,14 +24,14 @@ fields:
   fields:
   - name: jaar_uitvoering
     type: number
-    label: Jaar uitvoering
+    label: Jaar van uitvoering
     description: ''
     default: 0
     required: true
     config:
       min: 1950
       max: 2050
-      step: 
+      step:
       required: true
   - name: location
     type: text
@@ -50,9 +50,9 @@ fields:
     default: 0
     required: true
     config:
-      min: 
-      max: 
-      step: 
+      min:
+      max:
+      step:
   label: Eigenschappen
   description: Eigenschappen van het project.
 - type: file

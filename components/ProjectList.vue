@@ -12,8 +12,8 @@
                     </div>
                     <div class="projectList__info">
                         <h2>{{ post.attributes.title }}</h2>
-                        <p class="projectList__subtitle">{{ post.attributes.jaar_uitvoering }}</p>
-                        <ProjectTypeList :types=post.attributes.projecttype />
+                        <p class="projectList__subtitle">{{ post.attributes.properties.jaar_uitvoering }}</p>
+                        <ProjectTypeList :types="post.attributes.projecttype" />
                         <p>{{ post.attributes.description }}</p>
                     </div>
                 </li>

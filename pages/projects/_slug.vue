@@ -7,9 +7,15 @@
       </figure>
     <div class="project__info" >
       <h1>{{ post.attributes.title }}</h1>
-      <ProjectTypeList :types=post.attributes.projecttype />
+      <ProjectTypeList :types="post.attributes.projecttype" />
       <p>{{ post.attributes.description }}</p>
-      <p>{{ post.attributes.jaar_uitvoering }}<span v-if="post.attributes.location != ''"> &mdash; {{ post.attributes.location }}</span></p>
+      <dl>
+        <div v-for="(value, name) in post.attributes.properties" :key="name">
+          <dt>{{ name }}</dt>
+          <dd>{{ value }}</dd>
+        </div>
+      </dl>
+      <!-- <p>{{ post.attributes.jaar_uitvoering }}<span v-if="post.attributes.location != ''"> &mdash; {{ post.attributes.location }}</span></p> -->
     </div>
     <div class="project__body" v-html="post.html"></div>
     <div class="project__footer">
