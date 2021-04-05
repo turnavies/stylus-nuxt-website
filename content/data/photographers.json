@@ -1,7 +1,6 @@
 {
   "photographers": [
-    "Turostro",
-    "Anna Van Oekelen",
-    "Stylus Architecten"
+    {"name":"test","filterable":false},
+    {"name":"test2","filterable":false}
   ]
 }
