@@ -42,6 +42,11 @@ fields:
     max: 2050
     step: 
     required: true
+- name: properties
+  type: field_group
+  config: {}
+  label: Eigenschappen
+  description: Eigenschappen van het project.
 - name: location
   type: text
   config:
