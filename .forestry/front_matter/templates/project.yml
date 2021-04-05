@@ -35,44 +35,39 @@ fields:
   type: field_group
   config: {}
   fields:
-  - name: test
+  - name: jaar_uitvoering
+    type: number
+    label: Jaar uitvoering
+    description: ''
+    default: 0
+    required: true
+    config:
+      min: 1950
+      max: 2050
+      step:
+      required: true
+  - name: location
     type: text
     config:
       required: false
-    label: test
+    label: Locatie
+  - name: bouwheer
+    type: text
+    config:
+      required: false
+    label: Bouwheer
+  - name: budget
+    type: number
+    label: Budget
+    description: ''
+    default: 0
+    required: true
+    config:
+      min:
+      max:
+      step:
   label: Eigenschappen
   description: Eigenschappen van het project.
-- name: jaar_uitvoering
-  type: number
-  label: Jaar uitvoering
-  description: ''
-  default: 0
-  required: true
-  config:
-    min: 1950
-    max: 2050
-    step: 
-    required: true
-- name: location
-  type: text
-  config:
-    required: false
-  label: Locatie
-- name: bouwheer
-  type: text
-  config:
-    required: false
-  label: Bouwheer
-- name: budget
-  type: number
-  label: Budget
-  description: ''
-  default: 0
-  required: true
-  config:
-    min: 
-    max: 
-    step: 
 - type: datetime
   name: date
   label: date
@@ -97,3 +92,5 @@ fields:
 pages:
 - content/projects/dm30.md
 - content/projects/test04.md
+- content/projects/indu01.md
+- content/projects/proj02.md
