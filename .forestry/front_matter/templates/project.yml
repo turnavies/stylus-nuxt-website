@@ -8,11 +8,11 @@ fields:
   config:
     required: true
   description: Projectnaam moet overeenkomen met filename
-- name: subtitle
+- name: description
   type: text
   config:
     required: true
-  label: Subtitel
+  label: Omschrijving
   showOnly:
     value: Allen Ginsberg
 - name: projecttype
@@ -23,16 +23,11 @@ fields:
     max: 2
     source:
       type: documents
-      section: projecttypes
+      section: project-types
       file: content/data/projecttypes.json
       path: projecttypes
   label: Projecttype
-  description: Selecteer 1 of meer projecttypes die van toepassing zijn.
-- name: bouwheer
-  type: text
-  config:
-    required: false
-  label: Bouwheer
+  description: Selecteer 1 of 2 projecttypes die van toepassing zijn.
 - name: jaar_uitvoering
   type: number
   label: Jaar uitvoering
@@ -44,6 +39,16 @@ fields:
     max: 2050
     step: 
     required: true
+- name: location
+  type: text
+  config:
+    required: false
+  label: Locatie
+- name: bouwheer
+  type: text
+  config:
+    required: false
+  label: Bouwheer
 - name: budget
   type: number
   label: Budget
@@ -62,9 +67,11 @@ fields:
   label: date
   config:
     required: true
+  hidden: true
+  default: now
 - name: photographer
   type: select
-  default: []
+  default: STYLUS Architecten Van Oekelen & Ratinckx
   config:
     required: true
     options: []
@@ -73,7 +80,7 @@ fields:
       section: photographer-list
       file: content/data/photographers.json
       path: photographers
-  label: Photographer
+  label: Fotograaf
   description: Select photographer. To add a new photographer, go to Photographers
     List
 pages:
