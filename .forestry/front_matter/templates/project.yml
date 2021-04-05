@@ -7,7 +7,7 @@ fields:
   label: Projectnaam
   config:
     required: true
-  description: Projectnaam moet overeenkomen met filename
+  description: Titel of naam van het project.
 - name: description
   type: textarea
   default: ''
