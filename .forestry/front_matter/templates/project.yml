@@ -17,6 +17,7 @@ fields:
     schema:
       format: markdown
   label: Omschrijving
+  description: Korte omschrijving van het project.
 - name: properties
   type: field_group
   config: {}
