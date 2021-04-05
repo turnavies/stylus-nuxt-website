@@ -16,7 +16,7 @@
                         <ul class="projectList__typeList">
                           <li v-for="projecttype in post.attributes.projecttype" :key="projecttype" class="projectList__typeItem">{{ projecttype }}</li>
                         </ul>
-                        <p>{{ formatExcerpt(post.body) }}...</p>
+                        <p>{{ post.attributes.description }}</p>
                     </div>
                 </li>
             </NuxtLink>
