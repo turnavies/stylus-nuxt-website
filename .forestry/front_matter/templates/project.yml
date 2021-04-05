@@ -67,6 +67,16 @@ fields:
   label: Photographer
   description: Select photographer. To add a new photographer, go to Photographers
     List
+- name: test
+  type: list
+  config:
+    use_select: true
+    min: 1
+    max: 2
+    source:
+      type: pages
+      section: photographer-list
+  label: test
 pages:
 - content/projects/dm30.md
 - content/projects/test04.md
