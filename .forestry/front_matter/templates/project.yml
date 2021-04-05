@@ -31,6 +31,11 @@ fields:
       path: projecttypes
   label: Projecttype
   description: Selecteer 1 of 2 projecttypes die van toepassing zijn.
+- name: properties
+  type: field_group
+  config: {}
+  label: Eigenschappen
+  description: Eigenschappen van het project.
 - name: jaar_uitvoering
   type: number
   label: Jaar uitvoering
@@ -42,11 +47,6 @@ fields:
     max: 2050
     step: 
     required: true
-- name: properties
-  type: field_group
-  config: {}
-  label: Eigenschappen
-  description: Eigenschappen van het project.
 - name: location
   type: text
   config:
