@@ -1,0 +1,20 @@
+{
+  "categories": [
+    {
+      name: "Particulier",
+      filterable: true
+    },
+    {
+      name: "Industrieel",
+      filterable: true
+    },
+    {
+      name: "Nieuwbouw",
+      filterable: false
+    },
+    {
+      name: "Renovatie",
+      filterable: false
+    }
+  ]
+}
