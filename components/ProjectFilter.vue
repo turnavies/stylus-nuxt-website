@@ -1,7 +1,7 @@
 <template>
     <section class="projectFilter__wrapper">
         <label for="Alle projecten">
-          <input id="Alle projecten" type="radio" name="catfilter" value="Alle projecten" @change="filterPosts('')" checked />
+          <input id="Alle projecten" type="radio" name="catfilter" value="Alle projecten" checked @change="filterPosts('')" />
           <span>Alle projecten</span>
         </label>
         <label v-for="filter in catFilter" :key="filter" :for="filter">
@@ -28,7 +28,7 @@
         },
         computed: {
             catFilter() {
-                return Array.from(new Set(Array.from(new Set(this.posts.map(e => e.attributes.projecttype))).flat()))
+                return new Set([].concat.apply([], this.posts.map(e => e.attributes.projecttype)))
             }
         },
         methods: {
