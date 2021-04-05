@@ -1,4 +1,4 @@
-// the posts are passed down to the Blog List component to be rendered
+// the posts are passed down to the Project List component to be rendered
 
 <template>
   <div>
@@ -10,10 +10,10 @@
 import ProjectList from '~/components/ProjectList.vue'
 
 export default {
-  layout: 'layout',
   components: {
     ProjectList
   },
+  layout: 'layout',
   async asyncData() {
       // create context via webpack to map over all project posts
       const allPosts = await require.context("~/content/projects/", true, /\.md$/)
