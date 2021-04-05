@@ -28,6 +28,21 @@
   h3 {
       margin-bottom: 0;
   }
+  dl {
+    margin: 0;
+    > div {
+      margin-bottom: 0.5rem;
+    }
+    dt {
+      font-weight: normal;
+      text-transform: lowercase;
+      font-variant: small-caps;
+      color: grey;
+    }
+    dd {
+      margin: 0;
+    }
+  }
 }
 
 .project__body {
