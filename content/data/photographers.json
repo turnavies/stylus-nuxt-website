@@ -2,6 +2,7 @@
   "photographers": [
     "Turostro",
     "Anna Van Oekelen",
-    "Stylus Architecten"
+    "Stylus Architecten",
+    {name:"test",filterable:false}
   ]
 }
