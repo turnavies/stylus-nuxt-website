@@ -16,9 +16,17 @@ fields:
   showOnly:
     value: Allen Ginsberg
 - name: projecttype
-  type: tag_list
-  default: []
+  type: list
+  config:
+    use_select: true
+    min: 1
+    max: 2
+    source:
+      type: documents
+      section: project-categories
+      file: content/data/categories.json
   label: Projecttype
+  description: Selecteer 1 of meer projecttypes die van toepassing zijn.
 - name: bouwheer
   type: text
   config:
@@ -67,18 +75,6 @@ fields:
   label: Photographer
   description: Select photographer. To add a new photographer, go to Photographers
     List
-- name: test
-  type: list
-  config:
-    use_select: true
-    min: 1
-    max: 2
-    source:
-      type: documents
-      section: photographer-list
-      file: content/data/photographers.json
-      path: photographers
-  label: test
 pages:
 - content/projects/dm30.md
 - content/projects/test04.md
