@@ -1,20 +1,24 @@
 {
   "categories": [
     {
-      name: "Particulier",
-      filterable: true
+      "name": "Test",
+      "filterable": true
     },
     {
-      name: "Industrieel",
-      filterable: true
+      "name": "Particulier",
+      "filterable": true
     },
     {
-      name: "Nieuwbouw",
-      filterable: false
+      "name": "Industrieel",
+      "filterable": true
     },
     {
-      name: "Renovatie",
-      filterable: false
+      "name": "Nieuwbouw",
+      "filterable": false
+    },
+    {
+      "name": "Renovatie",
+      "filterable": false
     }
   ]
 }
