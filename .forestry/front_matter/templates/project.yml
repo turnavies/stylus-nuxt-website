@@ -22,9 +22,9 @@ fields:
     min: 1
     max: 2
     source:
-      type: documents
+      type: pages
       section: project-categories
-      file: 
+      file: content/data/categories.json
   label: Projecttype
   description: Selecteer 1 of meer projecttypes die van toepassing zijn.
 - name: bouwheer
