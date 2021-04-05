@@ -3,6 +3,6 @@
     "Turostro",
     "Anna Van Oekelen",
     "Stylus Architecten",
-    ["test",false]
+    [{"test",false}]
   ]
 }
