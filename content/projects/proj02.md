@@ -1,6 +1,5 @@
 ---
 title: PROJ02
-subtitle: Nieuwbouw van een particuliere woning
 projecttype:
 - Particulier
 - Nieuwbouw

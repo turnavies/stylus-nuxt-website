@@ -3,10 +3,9 @@ projecttype:
 - Industrieel
 - Nieuwbouw
 jaar_uitvoering: 1998
-budget: 
+budget:
 photographer: Turostro
 title: TEST04
-subtitle: Projecttitel
 bouwheer: ''
 hero_image: "/jj-ying-7JX0-bfiuxQ-unsplash.jpg"
 date: 2021-04-05T00:00:00.000+02:00

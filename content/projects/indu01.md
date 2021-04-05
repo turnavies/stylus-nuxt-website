@@ -1,6 +1,5 @@
 ---
 title: INDU01
-subtitle: Nieuwbouw van een industrieel gebouw
 projecttype:
 - Industrieel
 - Nieuwbouw
