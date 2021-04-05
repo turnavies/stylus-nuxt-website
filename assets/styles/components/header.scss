@@ -1,21 +1,35 @@
 .header {
     h1 {
-      margin-bottom: 0; 
+      margin-bottom: 0;
     }
   }
-  
-  .nav {
+
+  .nav__wrapper {
     padding: 1.5rem 1.25rem;
     border-bottom: 1px solid #EBEBEB;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     img {
       margin-bottom: 0;
     }
   }
-  
+
+  .nav__header {
+    flex: 1;
+  }
+
+  .nav__footer {
+    font-size: 1.8rem;
+    letter-spacing: -.5px;
+    line-height: 1.1875;
+    font-weight: normal;
+    padding-left: 1rem;
+    align-self: flex-start;
+  }
+
   @media (min-width: 768px) {
     .header {
       height: 100vh;
@@ -23,8 +37,8 @@
       left: 0;
       top: 0;
     }
-    
-    .nav {
+
+    .nav__wrapper {
       padding: 2rem;
       width: 30vw;
       height: 100%;
@@ -33,5 +47,8 @@
       flex-direction: column;
       align-items: flex-start;
     }
+
+    .nav__footer {
+      padding-left: 0;
+    }
   }
-  

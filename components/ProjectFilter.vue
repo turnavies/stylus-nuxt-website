@@ -1,10 +1,12 @@
 <template>
-    <section>
-        <label for="Alle projecten">Alle projecten
+    <section class="projectFilter__wrapper">
+        <label for="Alle projecten">
           <input id="Alle projecten" type="radio" name="catfilter" value="Alle projecten" @change="filterPosts('')"/>
+          <span>Alle projecten</span>
         </label>
-        <label v-for="filter in catFilter" :key="filter" :for="filter">{{filter}}
+        <label v-for="filter in catFilter" :key="filter" :for="filter">
           <input :id="filter" type="radio" name="catfilter" :value="filter" @change="filterPosts($event)"/>
+          <span>{{filter}}</span>
         </label>
     </section>
 </template>

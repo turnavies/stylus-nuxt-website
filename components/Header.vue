@@ -1,15 +1,15 @@
 <template>
     <header class="header">
-        <nav class="nav">
-            <NuxtLink to="/">
-                <h1>{{ config.title }}</h1>
-            </NuxtLink>
+        <nav class="nav__wrapper">
+            <header class="nav__header">
+              <NuxtLink to="/">
+                  <h1>{{ config.title }}</h1>
+              </NuxtLink>
+            </header>
             <ProjectFilter v-if="!isInfoPage"/>
-            <div>
-                <h1>
-                    <NuxtLink :to="infoRoute">{{ isInfoPage ? "close" : "info" }}</NuxtLink>
-                </h1>
-            </div>
+            <footer class="nav__footer">
+                <NuxtLink :to="infoRoute">{{ isInfoPage ? "close" : "info" }}</NuxtLink>
+            </footer>
         </nav>
 
     </header>
