@@ -9,9 +9,9 @@ date: 2021-04-05T00:00:00.000+02:00
 description: Test omschrijving
 properties:
   Jaar van uitvoering: 1998
-  Budget:
-  Bouwheer: ''
   Locatie: ''
+  Bouwheer: ''
+  Budget:
 
 ---
 Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod.

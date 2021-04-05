@@ -8,9 +8,9 @@ date: 2019-08-08T07:00:00.000+00:00
 photographer: Anna Van Oekelen
 description: 'Lorem ipsum industriële nieuwbouw '
 properties:
+  Jaar van uitvoering: 2019
   Locatie: Antwerpen
   Bouwheer: Firmanaam XYZ
-  Jaar van uitvoering: 2019
   Budget: 120000
 
 ---

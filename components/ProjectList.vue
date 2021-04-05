@@ -12,7 +12,7 @@
                     </div>
                     <div class="projectList__info">
                         <h2>{{ post.attributes.title }}</h2>
-                        <p class="projectList__subtitle">{{ post.attributes.properties.jaar_uitvoering }}</p>
+                        <p class="projectList__subtitle">{{ post.attributes.properties['Jaar van uitvoering'] }}</p>
                         <ProjectTypeList :types="post.attributes.projecttype" />
                         <p>{{ post.attributes.description }}</p>
                     </div>

@@ -10,7 +10,7 @@
       <ProjectTypeList :types="post.attributes.projecttype" />
       <p>{{ post.attributes.description }}</p>
       <dl>
-        <div v-for="(value, name) in post.attributes.properties" :key="name">
+        <div v-for="(value, name) in renderedProperties" :key="name">
           <dt>{{ name }}</dt>
           <dd>{{ value }}</dd>
         </div>
@@ -89,6 +89,16 @@
           return item === null || item === undefined
         }
         return nextPath
+      },
+      renderedProperties() {
+        const propertiesToRender = this.post.attributes.properties
+        for (const propName in propertiesToRender){
+          if(propertiesToRender[propName] === "" || propertiesToRender[propName] === null) {
+            delete propertiesToRender[propName]
+          }
+        }
+        console.log(propertiesToRender)
+        return propertiesToRender
       }
     }
   }
