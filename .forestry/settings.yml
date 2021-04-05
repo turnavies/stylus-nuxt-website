@@ -2,7 +2,7 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: ''
-webhook_url: 
+webhook_url:
 sections:
 - type: heading
   label: Content
@@ -15,18 +15,15 @@ sections:
   - project
 - type: document
   path: content/data/photographers.json
-  label: Photographer list
+  label: Photographers
 - type: document
   path: content/data/info.json
   label: Info Page
 - type: heading
   label: Config
 - type: document
-  path: content/data/categories.json
-  label: Project categories
-- type: document
-  path: content/data/categories2.json
-  label: Project categories 2
+  path: content/data/projecttypes.json
+  label: Project types
 - type: document
   path: content/data/config.json
   label: Site info
