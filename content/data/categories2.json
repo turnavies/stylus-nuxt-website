@@ -1,13 +1,7 @@
 {
   "categories": [
-<<<<<<< HEAD
     {"Test", [{name:"test",filterable:true}]},
     {"Particulier", [{name:"particulier",filterable:true}]},
     {"Industrieel", [{name:"industrieel",filterable:false}]}
-=======
-    {"Test",[{name:"test",filterable:true}]},
-    {"Particulier",[{name:"particulier",filterable:true}]},
-    {"Industrieel",[{name:"industrieel",filterable:false}]},
->>>>>>> 85ca597c381eaba66aacdacdc14a69ca97015075
   ]
 }
