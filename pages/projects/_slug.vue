@@ -92,8 +92,10 @@
       renderedProperties() {
         const propertiesToRender = this.post.attributes.properties
         for (const propName in propertiesToRender){
-          if(propertiesToRender[propName] === "" || propertiesToRender[propName] === null) {
+          if (propertiesToRender[propName] === "" || propertiesToRender[propName] === null) {
             delete propertiesToRender[propName]
+          } else if (typeof propertiesToRender[propName] === 'number' && propName !== 'Jaar van uitvoering') {
+            propertiesToRender[propName] = propertiesToRender[propName].toLocaleString('fr-BE', { style: 'currency', currency: 'EUR', minimumFractionDigits: 0, maximumFractionDigits: 0 })
           }
         }
         return propertiesToRender
