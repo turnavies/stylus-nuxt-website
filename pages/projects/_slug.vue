@@ -7,7 +7,9 @@
       </figure>
     <div class="project__info" >
       <h1>{{ post.attributes.title }}</h1>
-      <h3>{{ formattedDate }}</h3>
+      <ProjectTypeList :types=post.attributes.projecttype />
+      <p>{{ post.attributes.description }}</p>
+      <p>{{ post.attributes.jaar_uitvoering }}<span v-if="post.attributes.location != ''"> &mdash; {{ post.attributes.location }}</span></p>
     </div>
     <div class="project__body" v-html="post.html"></div>
     <div class="project__footer">
@@ -22,7 +24,12 @@
 </template>
 
 <script>
+  import ProjectTypeList from '~/components/ProjectTypeList.vue'
+
   export default {
+    components: {
+      ProjectTypeList
+    },
     layout: "layout",
     // get the slug as a param to import the correct md file
     async asyncData({ params }) {

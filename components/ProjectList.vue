@@ -13,9 +13,7 @@
                     <div class="projectList__info">
                         <h2>{{ post.attributes.title }}</h2>
                         <p class="projectList__subtitle">{{ post.attributes.jaar_uitvoering }}</p>
-                        <ul class="projectList__typeList">
-                          <li v-for="projecttype in post.attributes.projecttype" :key="projecttype" class="projectList__typeItem">{{ projecttype }}</li>
-                        </ul>
+                        <ProjectTypeList :types=post.attributes.projecttype />
                         <p>{{ post.attributes.description }}</p>
                     </div>
                 </li>
@@ -24,7 +22,12 @@
     </section>
 </template>
 <script>
+    import ProjectTypeList from '~/components/ProjectTypeList.vue'
+
     export default {
+        components: {
+            ProjectTypeList
+        },
         props: {
             posts: {
                 type: Array,
