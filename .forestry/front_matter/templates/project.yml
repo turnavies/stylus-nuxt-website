@@ -34,6 +34,12 @@ fields:
 - name: properties
   type: field_group
   config: {}
+  fields:
+  - name: test
+    type: text
+    config:
+      required: false
+    label: test
   label: Eigenschappen
   description: Eigenschappen van het project.
 - name: jaar_uitvoering
