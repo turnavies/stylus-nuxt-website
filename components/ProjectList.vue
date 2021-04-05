@@ -31,11 +31,12 @@
                 required: true
             }
         },
+        data() {
+          return {
+            filteredPosts: this.posts
+          }
+        },
         computed: {
-            filteredPosts() {
-                const filteredPosts = this.posts
-                return filteredPosts
-            },
             sortedPosts() {
                 const sortedPosts = this.filteredPosts
                 sortedPosts.sort((a,b) => {
@@ -52,6 +53,11 @@
                 return sortedPosts
             }
         },
+        mounted() {
+            this.$root.$on('filterPosts', data => {
+                this.filterPosts(data);
+            });
+        },
         methods: {
             formatDate(date) {
                 return new Date(date).toDateString().slice(4)
@@ -62,6 +68,15 @@
             formatSlug(title) {
                 const regex = / /gi;
                 return title.toLowerCase().trim().replace(regex, "-")
+            },
+            filterPosts(filter) {
+                if (filter === '') {
+                  this.filteredPosts = this.posts
+                } else {
+                  this.filteredPosts = this.posts.filter(e => {
+                    return e.attributes.projecttype.includes(event.target.value)
+                  })
+                }
             }
         }
     }
