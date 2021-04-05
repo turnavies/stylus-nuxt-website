@@ -22,7 +22,7 @@ fields:
   type: field_group
   config: {}
   fields:
-  - name: jaar_uitvoering
+  - name: Jaar van uitvoering
     type: number
     label: Jaar van uitvoering
     description: ''
