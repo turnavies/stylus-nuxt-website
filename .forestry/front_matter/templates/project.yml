@@ -8,6 +8,9 @@ fields:
   config:
     required: true
   description: Projectnaam moet overeenkomen met filename
+- type: file
+  name: hero_image
+  label: hero_image
 - name: description
   type: text
   config:
@@ -59,9 +62,6 @@ fields:
     min: 
     max: 
     step: 
-- type: file
-  name: hero_image
-  label: hero_image
 - type: datetime
   name: date
   label: date
