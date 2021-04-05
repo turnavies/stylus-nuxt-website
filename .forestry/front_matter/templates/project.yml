@@ -9,12 +9,14 @@ fields:
     required: true
   description: Projectnaam moet overeenkomen met filename
 - name: description
-  type: text
+  type: textarea
+  default: ''
   config:
     required: true
+    wysiwyg: false
+    schema:
+      format: markdown
   label: Omschrijving
-  showOnly:
-    value: Allen Ginsberg
 - name: properties
   type: field_group
   config: {}
