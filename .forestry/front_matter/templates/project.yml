@@ -23,8 +23,9 @@ fields:
     max: 2
     source:
       type: documents
-      section: project-categories
-      file: content/data/categories.json
+      section: project-categories-2
+      file: content/data/categories2.json
+      path: ''
   label: Projecttype
   description: Selecteer 1 of meer projecttypes die van toepassing zijn.
 - name: bouwheer
