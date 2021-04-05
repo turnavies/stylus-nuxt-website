@@ -22,7 +22,7 @@ fields:
     min: 1
     max: 2
     source:
-      type: pages
+      type: documents
       section: project-categories
       file: content/data/categories.json
   label: Projecttype
