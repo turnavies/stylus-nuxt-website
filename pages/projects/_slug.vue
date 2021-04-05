@@ -9,7 +9,7 @@
       <h1>{{ post.attributes.title }}</h1>
       <h3>{{ formattedDate }}</h3>
     </div>
-    <div v-html="post.html" class="project__body"></div>
+    <div class="project__body" v-html="post.html"></div>
     <div class="project__footer">
       <h2>Fotografie door {{ post.attributes.photographer }}</h2>
       <NuxtLink :to="`/projects/${nextProjectPath}`">
@@ -20,23 +20,10 @@
     </div>
   </article>
 </template>
+
 <script>
   export default {
     layout: "layout",
-    computed: {
-      formattedDate() {
-        return new Date(this.post.attributes.date).toDateString().slice(4)
-      },
-      nextProjectPath() {
-        const firstProjectPath = this.sortedPaths[0]
-        // if there's no 'next' path, return the first path
-        const nextPath = isNull(this.sortedPaths[this.sortedPaths.indexOf(this.currentPath) + 1]) ? firstProjectPath : this.sortedPaths[this.sortedPaths.indexOf(this.currentPath) + 1]
-        function isNull(item) {
-          return item === null || item === undefined
-        }
-        return nextPath
-      }
-    },
     // get the slug as a param to import the correct md file
     async asyncData({ params }) {
       try {
@@ -65,7 +52,7 @@
           let relPath = post.attributes._meta.resourcePath.split('/')
           // get the end of the path, remove '.md'
           relPath = relPath[relPath.length - 1].slice(0, -3)
-          sortedPaths.push(relPath)
+          return sortedPaths.push(relPath)
         })
         return {
           sortedPaths,
@@ -77,5 +64,19 @@
         return false
       }
     },
+    computed: {
+      formattedDate() {
+        return new Date(this.post.attributes.date).toDateString().slice(4)
+      },
+      nextProjectPath() {
+        const firstProjectPath = this.sortedPaths[0]
+        // if there's no 'next' path, return the first path
+        const nextPath = isNull(this.sortedPaths[this.sortedPaths.indexOf(this.currentPath) + 1]) ? firstProjectPath : this.sortedPaths[this.sortedPaths.indexOf(this.currentPath) + 1]
+        function isNull(item) {
+          return item === null || item === undefined
+        }
+        return nextPath
+      }
+    }
   }
 </script>
