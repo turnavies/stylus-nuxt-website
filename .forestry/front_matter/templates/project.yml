@@ -74,8 +74,10 @@ fields:
     min: 1
     max: 2
     source:
-      type: pages
+      type: documents
       section: photographer-list
+      file: content/data/photographers.json
+      path: photographers
   label: test
 pages:
 - content/projects/dm30.md
