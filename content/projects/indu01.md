@@ -8,10 +8,10 @@ date: 2019-08-08T07:00:00.000+00:00
 photographer: Anna Van Oekelen
 description: 'Lorem ipsum industriële nieuwbouw '
 properties:
-  location: Antwerpen
-  bouwheer: Firmanaam XYZ
-  jaar_uitvoering: 2019
-  budget: 120000
+  Locatie: Antwerpen
+  Bouwheer: Firmanaam XYZ
+  Jaar van uitvoering: 2019
+  Budget: 120000
 
 ---
 I read the other day some verses written by an eminent painter which were original and not conventional. The soul always hears an admonition in such lines, let the subject be what it may. The sentiment they instill is of more value than any thought they may contain. To believe your own thought, to believe that what is true for you in your private heart is true for all men, — that is genius.

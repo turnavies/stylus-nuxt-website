@@ -1,9 +1,9 @@
 ---
 properties:
   Jaar van uitvoering: 2008
-  budget: 
-  location: Berchem
-  bouwheer: ''
+  Budget:
+  Locatie: Berchem
+  Bouwheer: ''
 photographer: STYLUS Architecten Van Oekelen & Ratinckx
 date: 2021-04-05T19:22:07+02:00
 title: PROJ05

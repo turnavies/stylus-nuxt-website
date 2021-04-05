@@ -8,10 +8,10 @@ date: 2019-07-29T07:00:00.000+00:00
 photographer: Turostro
 description: 'Omschrijving van het project: particuliere nieuwbouw te Schoten'
 properties:
-  location: Schoten
-  bouwheer: fam. Janssens
-  jaar_uitvoering: 2020
-  budget: 230000
+  Locatie: Schoten
+  Bouwheer: fam. Janssens
+  Jaar van uitvoering: 2020
+  Budget: 230000
 
 ---
 Then it is that I appreciate the beauty and the glory of architecture, which itself never turns in, but forever stands out and erect, keeping watch over the slumberers.

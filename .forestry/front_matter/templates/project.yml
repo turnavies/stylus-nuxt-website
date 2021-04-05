@@ -31,28 +31,28 @@ fields:
     config:
       min: 1950
       max: 2050
-      step: 
+      step:
       required: true
-  - name: location
+  - name: Locatie
     type: text
     config:
       required: false
     label: Locatie
-  - name: bouwheer
+  - name: Bouwheer
     type: text
     config:
       required: false
     label: Bouwheer
-  - name: budget
+  - name: Budget
     type: number
     label: Budget
     description: ''
     default: 0
     required: true
     config:
-      min: 
-      max: 
-      step: 
+      min:
+      max:
+      step:
   label: Eigenschappen
   description: Eigenschappen van het project.
 - type: file
