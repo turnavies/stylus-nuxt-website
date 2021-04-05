@@ -1,7 +1,7 @@
 {
   "categories": [
-    {"Test",true},
-    {"Particulier",true},
-    {"Nieuwbouw",false}
+    {"Test",[{name:"test",filterable:true}]},
+    {"Particulier",[{name:"particulier",filterable:true}]},
+    {"Industrieel",[{name:"industrieel",filterable:false}]},
   ]
 }
