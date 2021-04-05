@@ -4,7 +4,7 @@
             <NuxtLink to="/">
                 <h1>{{ config.title }}</h1>
             </NuxtLink>
-            <ProjectFilter />
+            <ProjectFilter v-if="!isInfoPage"/>
             <div>
                 <h1>
                     <NuxtLink :to="infoRoute">{{ isInfoPage ? "close" : "info" }}</NuxtLink>
