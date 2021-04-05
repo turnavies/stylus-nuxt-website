@@ -4,7 +4,7 @@
             <NuxtLink
                 v-for="post in sortedPosts"
                 :key="post.attributes.title"
-                :to="`/projects/${formatSlug(post.attributes.title)}`"
+                :to="`/projecten/${formatSlug(post.attributes.title)}`"
             >
                 <li>
                     <div class="hero_image">
