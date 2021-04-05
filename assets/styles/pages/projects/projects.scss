@@ -19,11 +19,9 @@
 }
 
 .project__info {
-  text-align: center;
   padding: 1.5rem 1.25rem;
   width: 100%;
   max-width: 768px;
-  margin: 0 auto;
   h1 {
       margin-bottom: 0.66rem;
   }
@@ -118,11 +116,13 @@
       }
   }
   .project__info {
-      text-align: center;
-      padding: 2rem 0;
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+
       h1 {
-      max-width: 500px;
-      margin: 0 auto 0.66rem auto;
+        max-width: 500px;
+        margin-bottom: 0.66rem;
       }
   }
   .project__footer {
@@ -135,7 +135,7 @@
       height: 70vh;
   }
   .project__info {
-      padding: 3rem 0;
+      padding: 3rem 2rem;
   }
   .project__footer {
       padding: 2rem 2rem 3rem 2rem;
