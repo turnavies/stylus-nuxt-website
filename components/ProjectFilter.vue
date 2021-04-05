@@ -1,7 +1,7 @@
 <template>
     <section class="projectFilter__wrapper">
         <label for="Alle projecten">
-          <input id="Alle projecten" type="radio" name="catfilter" value="Alle projecten" @change="filterPosts('')"/>
+          <input id="Alle projecten" type="radio" name="catfilter" value="Alle projecten" @change="filterPosts('')" checked />
           <span>Alle projecten</span>
         </label>
         <label v-for="filter in catFilter" :key="filter" :for="filter">
