@@ -62,6 +62,12 @@ export default {
           test: /\.md$/,
           loader: "frontmatter-markdown-loader",
           include: path.resolve(__dirname, "content/projects")
+      }),
+      config.module.rules.push(
+      {
+          test: /\.ya?ml$/,
+          loader: "js-yaml-loader",
+          include: path.resolve(__dirname, ".forestry/front_matter/templates")
       })
     }
   },
