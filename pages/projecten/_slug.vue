@@ -107,7 +107,6 @@
         }
 
         const propertiesToRender = {}
-
         properties.map(obj => { return obj.name }).forEach((prop, i) => {
           propertiesToRender.[properties.map(p => { return p.label })[i]] = projectProperties[prop]
         });
