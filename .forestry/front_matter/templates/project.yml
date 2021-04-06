@@ -22,7 +22,7 @@ fields:
   type: field_group
   config: {}
   fields:
-  - name: Jaar van uitvoering
+  - name: year
     type: number
     label: Jaar van uitvoering
     description: ''
@@ -33,17 +33,17 @@ fields:
       max: 2050
       step: 
       required: true
-  - name: Locatie
+  - name: location
     type: text
     config:
       required: true
     label: Locatie
-  - name: Bouwheer
+  - name: client
     type: text
     config:
       required: false
     label: Bouwheer
-  - name: Budget
+  - name: budget
     type: number
     label: Budget
     description: ''
