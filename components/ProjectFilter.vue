@@ -28,7 +28,7 @@
         },
         computed: {
             catFilter() {
-                return new Set([].concat.apply([], this.posts.map(e => e.attributes.projecttype)))
+                return Array.from(new Set([].concat.apply([], this.posts.map(e => e.attributes.projecttype))))
             }
         },
         methods: {
