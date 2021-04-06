@@ -1,9 +1,9 @@
 ---
 properties:
-  Jaar van uitvoering: 2021
-  Locatie: Temse
-  Bouwheer: ''
-  Budget: 
+  year: 2021
+  location: Temse
+  client: ''
+  budget: 
 photographer: STYLUS Architecten Van Oekelen & Ratinckx
 date: 2021-04-05T19:27:52+02:00
 title: INDU03
