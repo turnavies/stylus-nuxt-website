@@ -33,19 +33,16 @@ fields:
       max: 2050
       step:
       required: true
-    weight: 1
   - name: Locatie
     type: text
     config:
       required: true
     label: Locatie
-    weight: 5
   - name: Bouwheer
     type: text
     config:
       required: false
     label: Bouwheer
-    weight: 10
   - name: Budget
     type: number
     label: Budget
@@ -56,7 +53,6 @@ fields:
       min:
       max:
       step:
-    weight: 20
   label: Eigenschappen
   description: Eigenschappen van het project.
 - type: file
