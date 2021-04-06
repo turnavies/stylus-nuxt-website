@@ -22,19 +22,15 @@
         components: {
             ProjectFilter
         },
-        props: {
-            pageType: {
-                type: String,
-                default: 'index',
-                required: false
-            }
-        },
         data() {
           return {
             config: require("../content/data/config.json")
           }
         },
         computed: {
+            pageType() {
+                return this.$nuxt._route.name
+            },
             infoRoute() {
                 return this.pageType === 'info' ? "/" : "/info"
             }
