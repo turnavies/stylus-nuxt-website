@@ -1,9 +1,9 @@
 {
   "projecttypes": [
+    "test",
     "Particulier",
     "Industrieel",
     "Nieuwbouw",
-    "Renovatie",
-    "Verbouwing"
+    "Renovatie"
   ]
 }
