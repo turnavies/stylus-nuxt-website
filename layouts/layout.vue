@@ -1,6 +1,6 @@
 <template>
     <section class="layout">
-        <Header :is-info-page="isInfoPage" />
+        <Header :page-type="getPageType" />
         <div class="content">
             <nuxt />
         </div>
@@ -13,12 +13,11 @@ import Header from '~/components/Header.vue'
     export default {
         components: {
             Header
-        }, 
+        },
         computed: {
-            isInfoPage() {
-                return this.$nuxt._route.name === "info" && true
+            getPageType() {
+                return this.$nuxt._route.name
             }
         },
     }
 </script>
-

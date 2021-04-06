@@ -6,9 +6,9 @@
                   <h1>{{ config.title[0] }}<br />{{ config.title[1] }}</h1>
               </NuxtLink>
             </header>
-            <ProjectFilter v-if="!isInfoPage"/>
+            <ProjectFilter v-if="pageType !== 'info'"/>
             <footer class="nav__footer">
-                <NuxtLink :to="infoRoute">{{ isInfoPage ? "close" : "info" }}</NuxtLink>
+                <NuxtLink :to="infoRoute">{{ pageType === 'info' ? "close" : "info" }}</NuxtLink>
             </footer>
         </nav>
 
@@ -23,8 +23,9 @@
             ProjectFilter
         },
         props: {
-            isInfoPage: {
-                type: Boolean,
+            pageType: {
+                type: String,
+                default: 'index',
                 required: false
             }
         },
@@ -35,7 +36,7 @@
         },
         computed: {
             infoRoute() {
-                return this.isInfoPage ? "/" : "/info"
+                return this.pageType === 'info' ? "/" : "/info"
             }
         }
     }
