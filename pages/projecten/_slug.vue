@@ -31,6 +31,7 @@
 
 <script>
   import ProjectTypeList from '~/components/ProjectTypeList.vue'
+  import projectDefinition from '~/.forestry/front_matter/templates/project.yml'
 
   export default {
     components: {
@@ -90,14 +91,27 @@
         return nextPath
       },
       renderedProperties() {
-        const propertiesToRender = this.post.attributes.properties
-        for (const propName in propertiesToRender){
-          if (propertiesToRender[propName] === "" || propertiesToRender[propName] === null) {
-            delete propertiesToRender[propName]
-          } else if (typeof propertiesToRender[propName] === 'number' && propName !== 'Jaar van uitvoering') {
-            propertiesToRender[propName] = propertiesToRender[propName].toLocaleString('fr-BE', { style: 'currency', currency: 'EUR', minimumFractionDigits: 0, maximumFractionDigits: 0 })
+        // load properties as defined in CMS yml - specific to Forestry.io
+        const properties = projectDefinition.fields.filter(obj => {
+          return obj.name === 'properties'
+        })[0].fields
+
+        // load current project properties
+        const projectProperties = this.post.attributes.properties
+        for (const propName in projectProperties){
+          if (projectProperties[propName] === "" || projectProperties[propName] === null) {
+            delete projectProperties[propName]
+          } else if (typeof projectProperties[propName] === 'number' && propName === 'budget') {
+            projectProperties[propName] = projectProperties[propName].toLocaleString('fr-BE', { style: 'currency', currency: 'EUR', minimumFractionDigits: 0, maximumFractionDigits: 0 })
           }
         }
+
+        const propertiesToRender = {}
+
+        properties.map(obj => { return obj.name }).forEach((prop, i) => {
+          propertiesToRender.[properties.map(p => { return p.label })[i]] = projectProperties[prop]
+        });
+
         return propertiesToRender
       }
     }
