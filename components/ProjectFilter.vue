@@ -13,6 +13,12 @@
 
 <script>
     export default {
+        data() {
+            return {
+                selectedFilter: "Alle projecten",
+                posts: []
+            }
+        },
         async fetch() {
             // create context via webpack to map over all project posts
             const allPosts = await require.context("~/content/projects/", true, /\.md$/)
@@ -20,12 +26,6 @@
                 // give back the value of each post context
                 return allPosts(key)
             })
-        },
-        data() {
-            return {
-                selectedFilter: "Alle projecten",
-                posts: []
-            }
         },
         computed: {
             catFilter() {
