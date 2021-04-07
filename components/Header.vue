@@ -6,7 +6,7 @@
                   <h1>{{ config.title[0] }}<br />{{ config.title[1] }}</h1>
               </NuxtLink>
             </header>
-            <ProjectFilter v-if="pageType !== 'info'"/>
+            <ProjectFilter v-if="pageType !== 'info'" />
             <footer class="nav__footer">
                 <NuxtLink :to="infoRoute">{{ pageType === 'info' ? "close" : "info" }}</NuxtLink>
             </footer>

@@ -2,7 +2,7 @@
     <section>
         <ul class="list">
             <NuxtLink
-                v-for="post in sortedPosts"
+                v-for="post in posts"
                 :key="post.attributes.title"
                 :to="`/projecten/${formatSlug(post.attributes.title)}`"
             >
@@ -12,7 +12,7 @@
                     </div>
                     <div class="projectList__info">
                         <h2>{{ post.attributes.title }}</h2>
-                        <p class="projectList__subtitle">{{ post.attributes.properties['Jaar van uitvoering'] }}</p>
+                        <p class="projectList__subtitle">{{ post.attributes.properties.year }}</p>
                         <ProjectTypeList :types="post.attributes.projecttype" />
                         <p>{{ post.attributes.description }}</p>
                     </div>
@@ -34,33 +34,6 @@
                 required: true
             }
         },
-        data() {
-          return {
-            filteredPosts: this.posts
-          }
-        },
-        computed: {
-            sortedPosts() {
-                const sortedPosts = this.filteredPosts
-                sortedPosts.sort((a,b) => {
-                    const dateA = new Date(a.attributes.jaar_uitvoering);
-                    const dateB = new Date(b.attributes.jaar_uitvoering);
-                    if (dateA < dateB) {
-                        return 1;
-                    }
-                    if (dateA > dateB) {
-                        return -1;
-                    }
-                    return 0;
-                })
-                return sortedPosts
-            }
-        },
-        mounted() {
-            this.$root.$on('filterPosts', data => {
-                this.filterPosts(data);
-            });
-        },
         methods: {
             formatDate(date) {
                 return new Date(date).toDateString().slice(4)
@@ -71,15 +44,6 @@
             formatSlug(title) {
                 const regex = / /gi;
                 return title.toLowerCase().trim().replace(regex, "-")
-            },
-            filterPosts(filter) {
-                if (filter === '') {
-                  this.filteredPosts = this.posts
-                } else {
-                  this.filteredPosts = this.posts.filter(e => {
-                    return e.attributes.projecttype.includes(event.target.value)
-                  })
-                }
             }
         }
     }
