@@ -93,7 +93,7 @@
       renderedProperties() {
         // load properties as defined in CMS yml - specific to Forestry.io
         const properties = projectDefinition.fields.filter(obj => {
-          return obj.name === 'properties'
+            return obj.name === 'properties'
         })[0].fields
 
         // load current project properties
@@ -108,7 +108,9 @@
 
         const propertiesToRender = {}
         properties.map(obj => { return obj.name }).forEach((prop, i) => {
-          propertiesToRender.[properties.map(p => { return p.label })[i]] = projectProperties[prop]
+            if(typeof projectProperties[prop] !== "undefined"){
+                propertiesToRender.[properties.map(p => { return p.label })[i]] = projectProperties[prop]
+            }
         });
 
         return propertiesToRender
